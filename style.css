@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#header {
+display: flex;
+justify-content:space-around;
+flex-wrap: wrap;
+background-color: aqua;
+align-items: center;
+}
+[data-test-id = "goals"]{
+    background-color: red;
+}
