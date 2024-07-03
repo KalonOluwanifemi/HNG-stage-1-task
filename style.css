@@ -13,18 +13,33 @@ body{
     flex-wrap: wrap;
     background-color: rgb(8, 8, 8);
     align-items: center;
+    color:rgb(129, 129, 129);
 }
 #currentTimeUTC{
-    border: 1px dotted white;
+    border: 1px solid rgb(53, 52, 52);
+    padding: 2px 5px;
+    color: rgb(129, 129, 129);
+    padding: 5px 10px;
+    margin: 10px;
+}
+#currentDayUTC{
+    border: 1px solid rgb(53, 52, 52);
     padding: 2px 5px;
     color: antiquewhite;
     padding: 5px 10px;
     margin: 10px;
 }
-#currentDayUTC{
-    border: 1px dotted white;
+#slackDisplayName{
+    border: 1px solid rgb(53, 52, 52);
     padding: 2px 5px;
-    color: antiquewhite;
+    color: rgb(129, 129, 129);
+    padding: 5px 10px;
+    margin: 10px;
+    letter-spacing: 8px;
+}#slackEmail{
+    border: 1px solid rgb(53, 52, 52);
+    padding: 2px 5px;
+    color: rgb(129, 129, 129);
     padding: 5px 10px;
     margin: 10px;
 }
@@ -39,10 +54,22 @@ section{
 #personal_goals{
     width: 70%;
 } 
+h2{
+    padding-bottom: 10px;
+    width: fit-content;
+    padding: 5px 10px;
+    border: 1px solid red;
+    margin-top: 5px;
+}
 section ul li{
     list-style: none;
-    padding-left: 10px;
-    padding-top: 15px;  
+    padding-left: 10px; 
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: white
+
+
     /* margin: 10px; */
 }
 img{
@@ -56,4 +83,51 @@ img{
     color: white;
     padding-top: 10px;
     text-align: center;
+}
+
+@media (max-width: 600px) {
+    #header{
+    display: block;
+    text-align: center;
+    }
+    [data-test-id = "goals"]{
+        display: block;
+        background-color: rgb(105, 11, 11);} 
+img{
+    display: block;
+    margin: 0px auto;
+    width: 70%;
+    border-radius: 2%;
+}
+    
+#currentTimeUTC{
+    border: 1px solid rgb(53, 52, 52);
+    padding: 1px 2.5px;
+    color: rgb(129, 129, 129);
+    margin: 10px;
+    font-size: small;
+}
+#currentDayUTC{
+    border: 1px solid rgb(53, 52, 52);
+    padding: 2px 5px;
+    color: antiquewhite;
+    padding: 5px 10px;
+    margin: 10px;
+}
+#slackDisplayName{
+    border: 1px solid rgb(53, 52, 52);
+    padding: 1px 2.5px;
+    color: rgb(129, 129, 129);
+    margin: 10px;
+}#slackEmail{
+    border: 1px solid rgb(53, 52, 52);
+    padding: 2px 5px;
+    color: rgb(129, 129, 129);
+    padding: 5px 10px;
+    margin: 10px;   
+} 
+#personal_goals{ 
+    display: block;
+    text-align: center;
+}  
 }
